@@ -10,6 +10,7 @@
 body{
   margin: 100px;
   background-color: #ddd;
+  font-family: arial, sans-serif;
 }
 
 .tabs .menu li{
@@ -20,6 +21,7 @@ body{
   text-align: center;
   cursor: pointer;
   border-right: 1px solid #333;
+  text-transform: uppercase;
 }
 
 .tabs .menu li:last-child{

@@ -14,6 +14,19 @@ $(document).ready(function(){
     $(this).addClass('active');
     var id = $(e.target).index();
     tabContent.hide().eq(id).fadeIn(300);
+
+    playerStatsKda.invalidateSize();
+    playerStatsKda.animateAgain();
+
+    playerStatsKp.invalidateSize();
+    playerStatsKp.animateAgain();
+
+    playerStatsGpm.invalidateSize();
+    playerStatsGpm.animateAgain();
+
+    playerStatsMkm.invalidateSize();
+    playerStatsMkm.animateAgain();
+
   });
 
 });

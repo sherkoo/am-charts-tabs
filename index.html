@@ -3,58 +3,470 @@
   <title></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
+<script type="text/javascript">
+var playerStatsKda = AmCharts.makeChart("playerStatsKda",
+{
+  "type": "serial",
+  "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+  "categoryField": "category",
+  "colors": [
+    "#000",
+    "#e90632",
+    "#999"
+  ],
+  "sequencedAnimation": false,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "categoryAxis": {
+    "gridPosition": "start"
+  },
+  "trendLines": [],
+  "graphs": [
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-1",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Player",
+    "type": "step",
+    "valueField": "player"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-2",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Game",
+    "type": "step",
+    "valueField": "game"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-3",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Role",
+    "type": "step",
+    "valueField": "role"
+  }
+  ],
+  "guides": [],
+  "valueAxes": [
+  {
+    "id": "ValueAxis-1",
+    // "title": "Axis title"
+  }
+  ],
+  "allLabels": [],
+  "balloon": {},
+  "legend": {
+    "useGraphSettings": true
+  },
+  "titles": [],
+  "dataProvider": [
+  {
+    "category": "Feb 2, 2014",
+    "game": 5,
+    "player": 8,
+    "role": "8"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "2",
+    "player": 6,
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 3,
+    "player": "7",
+    "role": "4"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 3,
+    "player": "9",
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 1,
+    "player": "7",
+    "role": "6"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 2,
+    "player": "8",
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "6",
+    "player": "7",
+    "role": "4"
+  }
+  ]
+}
+);
+</script>
+
+
+<script type="text/javascript">
+var playerStatsKp = AmCharts.makeChart("playerStatsKp",
+{
+  "type": "serial",
+  "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+  "categoryField": "category",
+  "colors": [
+    "#000",
+    "#e90632",
+    "#999"
+  ],
+  "sequencedAnimation": false,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "categoryAxis": {
+    "gridPosition": "start"
+  },
+  "trendLines": [],
+  "graphs": [
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-1",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Player",
+    "type": "step",
+    "valueField": "player"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-2",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Game",
+    "type": "step",
+    "valueField": "game"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-3",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Role",
+    "type": "step",
+    "valueField": "role"
+  }
+  ],
+  "guides": [],
+  "valueAxes": [
+  {
+    "id": "ValueAxis-1",
+    // "title": "Axis title"
+  }
+  ],
+  "allLabels": [],
+  "balloon": {},
+  "legend": {
+    "useGraphSettings": true
+  },
+  "titles": [],
+  "dataProvider": [
+  {
+    "category": "Feb 2, 2014",
+    "game": 15,
+    "player": 18,
+    "role": "8"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "12",
+    "player": 16,
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "17",
+    "role": "14"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "19",
+    "role": "15"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 1,
+    "player": "7",
+    "role": "6"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 2,
+    "player": "8",
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "6",
+    "player": "7",
+    "role": "4"
+  }
+  ]
+}
+);
+</script>
+
+<script type="text/javascript">
+var playerStatsGpm = AmCharts.makeChart("playerStatsGpm",
+{
+  "type": "serial",
+  "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+  "categoryField": "category",
+  "colors": [
+    "#000",
+    "#e90632",
+    "#999"
+  ],
+  "sequencedAnimation": false,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "categoryAxis": {
+    "gridPosition": "start"
+  },
+  "trendLines": [],
+  "graphs": [
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-1",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Player",
+    "type": "step",
+    "valueField": "player"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-2",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Game",
+    "type": "step",
+    "valueField": "game"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-3",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Role",
+    "type": "step",
+    "valueField": "role"
+  }
+  ],
+  "guides": [],
+  "valueAxes": [
+  {
+    "id": "ValueAxis-1",
+    // "title": "Axis title"
+  }
+  ],
+  "allLabels": [],
+  "balloon": {},
+  "legend": {
+    "useGraphSettings": true
+  },
+  "titles": [],
+  "dataProvider": [
+  {
+    "category": "Feb 2, 2014",
+    "game": 15,
+    "player": 18,
+    "role": "8"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "12",
+    "player": 16,
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "17",
+    "role": "14"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "19",
+    "role": "15"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 1,
+    "player": "7",
+    "role": "6"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 2,
+    "player": "8",
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "6",
+    "player": "7",
+    "role": "4"
+  }
+  ]
+}
+);
+</script>
+
+<script type="text/javascript">
+var playerStatsMkm = AmCharts.makeChart("playerStatsMkm",
+{
+  "type": "serial",
+  "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+  "categoryField": "category",
+  "colors": [
+    "#000",
+    "#e90632",
+    "#999"
+  ],
+  "sequencedAnimation": false,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "categoryAxis": {
+    "gridPosition": "start"
+  },
+  "trendLines": [],
+  "graphs": [
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-1",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Player",
+    "type": "step",
+    "valueField": "player"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-2",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Game",
+    "type": "step",
+    "valueField": "game"
+  },
+  {
+    "balloonText": "[[title]] of [[category]]:[[value]]",
+    "id": "AmGraph-3",
+    "lineThickness": 4,
+    "noStepRisers": true,
+    "title": "Avg. For Role",
+    "type": "step",
+    "valueField": "role"
+  }
+  ],
+  "guides": [],
+  "valueAxes": [
+  {
+    "id": "ValueAxis-1",
+    // "title": "Axis title"
+  }
+  ],
+  "allLabels": [],
+  "balloon": {},
+  "legend": {
+    "useGraphSettings": true
+  },
+  "titles": [],
+  "dataProvider": [
+  {
+    "category": "Feb 2, 2014",
+    "game": 15,
+    "player": 18,
+    "role": "8"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "12",
+    "player": 16,
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "17",
+    "role": "14"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 13,
+    "player": "19",
+    "role": "15"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 1,
+    "player": "7",
+    "role": "6"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": 2,
+    "player": "8",
+    "role": "5"
+  },
+  {
+    "category": "Feb 2, 2014",
+    "game": "6",
+    "player": "7",
+    "role": "4"
+  }
+  ]
+}
+);
+</script>
+
+
   <!-- tabs -->
   <section id="whatever" class="tabs">
     <ul class="menu">
-      <li class="col-25">link1</li>
-      <li class="col-25">link2</li>
-      <li class="col-25">link3</li>
-      <li class="col-25">link4</li>
+      <li class="col-25">kda</li>
+      <li class="col-25">kp</li>
+      <li class="col-25">gpm</li>
+      <li class="col-25">mkm</li>
     </ul>
 
     <div class="box pad">
       <div class="content">
-        <h2>box 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="playerStatsKda" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
       </div>
 
       <div class="content">
-        <h2>box 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="playerStatsKp" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
       </div>
 
       <div class="content">
-        <h2>box 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="playerStatsGpm" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
       </div>
 
       <div class="content">
-        <h2>box 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="playerStatsMkm" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
       </div>
     </div>
   </section>
