@@ -1,0 +1,4 @@
+basicjquerytabs
+===============
+
+Simple jquery tabs
