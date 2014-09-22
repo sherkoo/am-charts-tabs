@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 100px;
+  background-color: #ddd;
+}
+
+.tabs .menu li{
+  height: 40px;
+  line-height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #333;
+}
+
+.tabs .menu li:last-child{
+  border-right: none;
+}
+
+.tabs .menu li:hover{
+  background-color: #222;
+}
+
+.tabs .menu li.active{
+  background-color: red;
+}
+
+.tabs .content{
+
+}
+
+.col-25{
+  width: 25%;
+  float: left;
+}
+
+.pad{
+  padding: 10px;
+}
+
+.box{
+  background-color: #fff;
+}
